@@ -64,21 +64,12 @@ const ExamRulesDialog = ({ open, onClose }: ExamRulesDialogProps) => {
                 <li className="flex items-start">
                   <X className="h-4 w-4 mr-2 text-red-600 mt-0.5" />
                   <span>
-                    Wearing hats, sunglasses, or masks that obscure your face is
-                    not permitted.
-                  </span>
-                </li>
-                <li className="flex items-start">
-                  <X className="h-4 w-4 mr-2 text-red-600 mt-0.5" />
-                  <span>
-                    Multiple people in the camera view will trigger an alert and
-                    may result in exam termination.
+                    Do not wear hats, sunglasses, or other items that obscure
+                    your face.
                   </span>
                 </li>
               </ul>
             </div>
-
-            <Separator />
 
             <div>
               <h3 className="text-lg font-semibold mb-2 flex items-center">
@@ -89,164 +80,127 @@ const ExamRulesDialog = ({ open, onClose }: ExamRulesDialogProps) => {
                 <li className="flex items-start">
                   <CheckCircle className="h-4 w-4 mr-2 text-green-600 mt-0.5" />
                   <span>
-                    Your microphone must remain on throughout the exam.
-                  </span>
-                </li>
-                <li className="flex items-start">
-                  <X className="h-4 w-4 mr-2 text-red-600 mt-0.5" />
-                  <span>
-                    Speaking aloud, unless specifically permitted, is not
-                    allowed.
-                  </span>
-                </li>
-                <li className="flex items-start">
-                  <X className="h-4 w-4 mr-2 text-red-600 mt-0.5" />
-                  <span>
-                    Background conversations or noise may trigger an alert.
+                    Your microphone will be active during the exam to detect
+                    background noise.
                   </span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle className="h-4 w-4 mr-2 text-green-600 mt-0.5" />
                   <span>
-                    If you need to communicate with a proctor, use the "Raise
-                    Hand" feature.
+                    Take the exam in a quiet environment with minimal
+                    distractions.
+                  </span>
+                </li>
+                <li className="flex items-start">
+                  <X className="h-4 w-4 mr-2 text-red-600 mt-0.5" />
+                  <span>
+                    Speaking to others or reading questions aloud is not
+                    permitted.
                   </span>
                 </li>
               </ul>
             </div>
-
-            <Separator />
 
             <div>
               <h3 className="text-lg font-semibold mb-2 flex items-center">
                 <Monitor className="h-5 w-5 mr-2 text-blue-600" />
-                Screen Monitoring & Browser Behavior
+                Screen Monitoring
               </h3>
               <ul className="space-y-2 text-sm">
                 <li className="flex items-start">
-                  <X className="h-4 w-4 mr-2 text-red-600 mt-0.5" />
-                  <span>
-                    Navigating away from the exam tab or opening other
-                    applications is strictly prohibited.
-                  </span>
-                </li>
-                <li className="flex items-start">
-                  <X className="h-4 w-4 mr-2 text-red-600 mt-0.5" />
-                  <span>
-                    Using additional monitors or displays is not permitted.
-                  </span>
-                </li>
-                <li className="flex items-start">
-                  <X className="h-4 w-4 mr-2 text-red-600 mt-0.5" />
-                  <span>
-                    Taking screenshots or recording the exam content is
-                    prohibited.
-                  </span>
-                </li>
-                <li className="flex items-start">
                   <CheckCircle className="h-4 w-4 mr-2 text-green-600 mt-0.5" />
                   <span>
-                    Screen sharing must remain active throughout the exam.
+                    Your screen activity will be recorded during the exam.
+                  </span>
+                </li>
+                <li className="flex items-start">
+                  <X className="h-4 w-4 mr-2 text-red-600 mt-0.5" />
+                  <span>
+                    Do not navigate away from the exam window or open other
+                    applications.
+                  </span>
+                </li>
+                <li className="flex items-start">
+                  <X className="h-4 w-4 mr-2 text-red-600 mt-0.5" />
+                  <span>
+                    Using search engines or accessing unauthorized resources is
+                    prohibited.
                   </span>
                 </li>
               </ul>
             </div>
-
-            <Separator />
 
             <div>
               <h3 className="text-lg font-semibold mb-2 flex items-center">
                 <Eye className="h-5 w-5 mr-2 text-blue-600" />
-                AI Proctoring & Monitoring
+                The Invigilator Monitoring
               </h3>
               <ul className="space-y-2 text-sm">
                 <li className="flex items-start">
                   <CheckCircle className="h-4 w-4 mr-2 text-green-600 mt-0.5" />
                   <span>
-                    AI systems will monitor your eye movements, facial
-                    expressions, and audio.
+                    A human invigilator will be monitoring your exam session.
                   </span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle className="h-4 w-4 mr-2 text-green-600 mt-0.5" />
                   <span>
-                    Suspicious behavior will be flagged for review by human
-                    proctors.
+                    The invigilator may contact you via chat if they notice any
+                    suspicious activity.
                   </span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle className="h-4 w-4 mr-2 text-green-600 mt-0.5" />
                   <span>
-                    All exam sessions are recorded for security and review
-                    purposes.
-                  </span>
-                </li>
-                <li className="flex items-start">
-                  <AlertTriangle className="h-4 w-4 mr-2 text-amber-600 mt-0.5" />
-                  <span>
-                    Multiple violations may result in exam termination or
-                    invalidation.
+                    You can request assistance from the invigilator using the
+                    help button.
                   </span>
                 </li>
               </ul>
             </div>
 
-            <Separator />
-
-            <div>
-              <h3 className="text-lg font-semibold mb-2 flex items-center">
-                <AlertTriangle className="h-5 w-5 mr-2 text-amber-600" />
-                Violations & Consequences
-              </h3>
-              <p className="text-sm mb-2">
-                The following actions may result in warnings, exam termination,
-                or academic penalties:
-              </p>
-              <ul className="space-y-2 text-sm">
-                <li className="flex items-start">
-                  <X className="h-4 w-4 mr-2 text-red-600 mt-0.5" />
-                  <span>Using unauthorized resources or materials</span>
-                </li>
-                <li className="flex items-start">
-                  <X className="h-4 w-4 mr-2 text-red-600 mt-0.5" />
-                  <span>Communicating with others during the exam</span>
-                </li>
-                <li className="flex items-start">
-                  <X className="h-4 w-4 mr-2 text-red-600 mt-0.5" />
-                  <span>Leaving the exam area without permission</span>
-                </li>
-                <li className="flex items-start">
-                  <X className="h-4 w-4 mr-2 text-red-600 mt-0.5" />
-                  <span>
-                    Attempting to copy, share, or distribute exam content
-                  </span>
-                </li>
-                <li className="flex items-start">
-                  <X className="h-4 w-4 mr-2 text-red-600 mt-0.5" />
-                  <span>Disabling or tampering with proctoring features</span>
-                </li>
-              </ul>
+            <div className="bg-amber-50 border border-amber-200 rounded-md p-4">
+              <div className="flex items-start">
+                <AlertTriangle className="h-5 w-5 mr-2 text-amber-600 mt-0.5" />
+                <div>
+                  <h4 className="font-medium text-amber-800 mb-1">
+                    Important Notice
+                  </h4>
+                  <p className="text-sm text-amber-700">
+                    Violations of these rules may result in your exam being
+                    terminated, and your results may be invalidated. Multiple
+                    violations may lead to disciplinary action according to your
+                    institution's academic integrity policy.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
-        <div className="flex items-center space-x-2 mt-4">
+        <Separator className="my-4" />
+
+        <div className="flex items-center space-x-2 mb-4">
           <Checkbox
             id="agree-rules"
             checked={agreedToRules}
-            onCheckedChange={(checked) => setAgreedToRules(checked as boolean)}
+            onCheckedChange={(checked) => setAgreedToRules(!!checked)}
           />
-          <Label htmlFor="agree-rules" className="text-sm">
-            I have read, understood, and agree to follow all exam rules and
-            guidelines
+          <Label
+            htmlFor="agree-rules"
+            className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+          >
+            I have read and agree to follow all exam rules and guidelines
           </Label>
         </div>
 
         <DialogFooter>
           <Button variant="outline" onClick={handleClose}>
-            Close
+            Cancel
           </Button>
-          <Button disabled={!agreedToRules}>Accept & Continue</Button>
+          <Button disabled={!agreedToRules} onClick={handleClose}>
+            Continue
+          </Button>
         </DialogFooter>
       </DialogContent>
     </Dialog>

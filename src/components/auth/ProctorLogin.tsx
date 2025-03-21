@@ -56,12 +56,12 @@ const ProctorLogin = ({ onLogin = () => {} }: ProctorLoginProps) => {
             <span className="text-2xl font-bold text-white">AP</span>
           </div>
           <h1 className="text-3xl font-bold text-white">The Invigilator </h1>
-          <p className="mt-2 text-slate-400">Proctor Portal</p>
+          <p className="mt-2 text-slate-400">The Invigilator Portal</p>
         </div>
 
         <Card className="border-0 shadow-xl">
           <CardHeader>
-            <CardTitle>Proctor Login</CardTitle>
+            <CardTitle>The Invigilator Login</CardTitle>
             <CardDescription>
               Enter your credentials to monitor exams
             </CardDescription>
@@ -81,7 +81,7 @@ const ProctorLogin = ({ onLogin = () => {} }: ProctorLoginProps) => {
                   <Input
                     id="email"
                     type="email"
-                    placeholder="proctor@example.com"
+                    placeholder="invigilator@example.com"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     required

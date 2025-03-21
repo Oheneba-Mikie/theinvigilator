@@ -22,10 +22,10 @@ const LoginSelector = ({ onSelectRole }: LoginSelectorProps) => {
             <span className="text-3xl font-bold text-white">AP</span>
           </div>
           <h1 className="text-4xl font-bold text-white">
-            AI Proctoring Platform
+            The Invigilator Platform
           </h1>
           <p className="mt-3 text-xl text-slate-300">
-            Secure, intelligent exam monitoring for educational institutions
+            Secure, professional exam monitoring for educational institutions
           </p>
         </div>
 
@@ -37,7 +37,7 @@ const LoginSelector = ({ onSelectRole }: LoginSelectorProps) => {
             <CardHeader>
               <CardTitle>Administrator</CardTitle>
               <CardDescription>
-                Manage exams, proctors, and system settings
+                Manage exams, invigilators, and system settings
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -47,8 +47,8 @@ const LoginSelector = ({ onSelectRole }: LoginSelectorProps) => {
                   schedule exams
                 </li>
                 <li className="flex items-center">
-                  <span className="mr-2 text-green-500">✓</span> Assign proctors
-                  to sessions
+                  <span className="mr-2 text-green-500">✓</span> Assign
+                  invigilators to sessions
                 </li>
                 <li className="flex items-center">
                   <span className="mr-2 text-green-500">✓</span> View
@@ -73,7 +73,7 @@ const LoginSelector = ({ onSelectRole }: LoginSelectorProps) => {
               <Users className="h-8 w-8 text-white" />
             </div>
             <CardHeader>
-              <CardTitle>Proctor</CardTitle>
+              <CardTitle>The Invigilator</CardTitle>
               <CardDescription>
                 Monitor exams and respond to suspicious activities
               </CardDescription>
@@ -85,8 +85,8 @@ const LoginSelector = ({ onSelectRole }: LoginSelectorProps) => {
                   of test-takers
                 </li>
                 <li className="flex items-center">
-                  <span className="mr-2 text-green-500">✓</span> Review
-                  AI-flagged incidents
+                  <span className="mr-2 text-green-500">✓</span> Review flagged
+                  incidents
                 </li>
                 <li className="flex items-center">
                   <span className="mr-2 text-green-500">✓</span> Communicate
@@ -101,7 +101,7 @@ const LoginSelector = ({ onSelectRole }: LoginSelectorProps) => {
                 className="w-full bg-indigo-600 hover:bg-indigo-700"
                 onClick={() => onSelectRole("proctor")}
               >
-                Proctor Login
+                The Invigilator Login
               </Button>
             </CardContent>
           </Card>
@@ -132,7 +132,7 @@ const LoginSelector = ({ onSelectRole }: LoginSelectorProps) => {
                 </li>
                 <li className="flex items-center">
                   <span className="mr-2 text-green-500">✓</span> Get help from
-                  proctors
+                  invigilators
                 </li>
               </ul>
               <Button
@@ -146,7 +146,7 @@ const LoginSelector = ({ onSelectRole }: LoginSelectorProps) => {
         </div>
 
         <div className="mt-8 text-center text-sm text-slate-400">
-          © 2023 AI Proctoring Platform. All rights reserved.
+          © 2023 The Invigilator Platform. All rights reserved.
         </div>
       </div>
     </div>

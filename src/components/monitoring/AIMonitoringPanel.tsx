@@ -112,7 +112,7 @@ const AIMonitoringPanel: React.FC<AIMonitoringPanelProps> = ({
           <Button variant="ghost" size="icon" onClick={onBack}>
             <ArrowLeft className="h-5 w-5" />
           </Button>
-          <h1 className="text-xl font-bold">AI Monitoring: {studentName}</h1>
+          <h1 className="text-xl font-bold">Monitoring: {studentName}</h1>
           <Badge variant="outline" className="ml-2">
             {examName}
           </Badge>
@@ -233,7 +233,7 @@ const AIMonitoringPanel: React.FC<AIMonitoringPanelProps> = ({
         </Tabs>
       </div>
 
-      {/* Proctor controls at the bottom */}
+      {/* The Invigilator controls at the bottom */}
       <div className="p-4 border-t border-slate-300">
         <ProctorControls
           studentName={studentName}
