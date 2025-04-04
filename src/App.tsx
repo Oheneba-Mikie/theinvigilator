@@ -21,8 +21,11 @@ const App = () => {
     "admin" | "proctor" | "student" | null
   >(null);
 
-  const handleLogin = (role: "admin" | "proctor" | "student") => {
-    setUserRole(role);
+  const handleLogin = (credentials: any) => {
+    // Set the user role based on the credentials
+    if (credentials && credentials.role) {
+      setUserRole(credentials.role);
+    }
   };
 
   const handleLogout = () => {
@@ -39,7 +42,7 @@ const App = () => {
           path="/"
           element={
             !userRole ? (
-              <LoginSelector onSelectRole={handleLogin} />
+              <LoginSelector onLogin={handleLogin} />
             ) : userRole === "admin" ? (
               <AdminDashboard onLogout={handleLogout} />
             ) : userRole === "proctor" ? (
@@ -51,21 +54,29 @@ const App = () => {
         />
         <Route
           path="/admin-login"
-          element={<AdminLogin onLogin={() => handleLogin("admin")} />}
+          element={
+            <AdminLogin onLogin={() => handleLogin({ role: "admin" })} />
+          }
         />
         <Route
           path="/proctor-login"
-          element={<ProctorLogin onLogin={() => handleLogin("proctor")} />}
+          element={
+            <ProctorLogin onLogin={() => handleLogin({ role: "proctor" })} />
+          }
         />
         <Route
           path="/student-login"
-          element={<StudentLogin onLogin={() => handleLogin("student")} />}
+          element={
+            <StudentLogin onLogin={() => handleLogin({ role: "student" })} />
+          }
         />
         <Route path="/exam-in-progress" element={<ExamInProgress />} />
         <Route
           path="/exam-complete"
           element={
-            <ExamComplete onReturnToDashboard={() => handleLogin("student")} />
+            <ExamComplete
+              onReturnToDashboard={() => handleLogin({ role: "student" })}
+            />
           }
         />
 
